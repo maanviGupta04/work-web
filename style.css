@@ -61,22 +61,33 @@ a {
   background: #004999;
 }
 
-.hire-btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background: #28a745;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.hire-btn:hover {
+input, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+button {
+  padding: 10px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
   background: #1e7e34;
 }
 
-/* Mobile responsiveness */
 @media (max-width: 600px) {
   body {
     padding: 0 10px;
